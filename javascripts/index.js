@@ -9,8 +9,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
 const handleClick = () => {
   fetch('http://localhost:3000/workouts')
-  .then(resp => {debugger})
+  .then(resp => resp.json())
+  .then(json => renderWorkouts(json))
   .catch(handleError)
+}
+
+const renderWorkouts = (workouts) => {
+  workouts.forEach(workout => {
+    const li = document.createElement('li')
+  })
 }
 
 const handleError = error => {
