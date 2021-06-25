@@ -4,15 +4,15 @@ const ulDiv = () => document.getElementById('list');
 const ul = () => document.getElementById('workouts-list');
 
 document.addEventListener('DOMContentLoaded', () => {
-  button.addEventListener('click', handleClick)
+  button().addEventListener('click', handleClick)
 })
 
 const handleClick = () => {
   fetch('http://localhost:3000/workouts')
-  .then()
+  .then(resp => {debugger})
   .catch(handleError)
 }
 
-const handleError = (error) => {
+const handleError = error => {
   console.log(error)
 }
