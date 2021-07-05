@@ -5,13 +5,21 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Workout Buddy</title>
+  <link rel="stylesheet" href="../stylesheets/index.css">
 </head>
 <body>
-  <div id="button-control">
-    <button id="button">My Workouts</button>
+  <div id="welcome-container" class="hidden">
+    <div id="app-name">Workout Buddy</div>
+    <div id="welcome-message">
+      Welcome to Workout Buddy!
+    </div>
   </div>
-  <div id="list">
-    <ul id="workouts-list">
+  <div id="workout-buttons-container">
+    <button id="my-workouts-button">My Workouts</button>
+    <button id="new-workout-button">New Workout</button>
+  </div>
+  <div id="my-workouts-container">
+    <ul id="my-workouts-list">
     </ul>
   </div>
   <script src="../javascripts/index.js"></script>
