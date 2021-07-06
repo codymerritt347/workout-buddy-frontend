@@ -11,11 +11,20 @@
     <link rel="stylesheet" href="stylesheets/index.css">
   </head>
   <body>
-    <header>
+    <div id="header">
       <h2>Workout Buddy</h2>
-    </header>
+    </div>
 
-    <div id="new-workout-container">
+    <div>
+      <button id="show-workouts-button">Show workouts</button>
+    </div>
+
+    <div id="show-workouts-div">
+      <ul id="workouts-ul">
+      </ul>
+    </div>
+
+    <div id="workout-form-container">
       <form id="workout-form">
         <h3>New Workout:</h3>
 
@@ -95,8 +104,8 @@
 
     <div id="workouts-list"></div>
 
-    <script src="../javascripts/workout.js"></script>
-    <script src="../javascripts/exercise.js"></script>
-    <script src="../javascripts/index.js"></script>
+    <script src="javascripts/workout.js"></script>
+    <script src="javascripts/exercise.js"></script>
+    <script src="javascripts/index.js"></script>
   </body>
 </html>
