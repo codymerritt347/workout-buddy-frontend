@@ -15,7 +15,7 @@
       <h2>Workout Buddy</h2>
     </header>
 
-    <div id="new-workout-container" class="card">
+    <div id="new-workout-container">
       <form id="workout-form">
         <h3>Create a new workout:</h3>
 
@@ -45,6 +45,51 @@
         </select><br><br>
 
         <input type="submit" value="Create Workout">
+      </form>
+    </div>
+
+    <div id="new-exercise-container">
+      <form id="exercise-form">
+        <h3>Create a new exercise:</h3>
+
+        <label for="exercise-name">💬 Name:</label>
+        <input type="text" name="exercise-name" id="exercise-name"><br><br>
+
+        <label for="exercise-target">💪 Target muscle(s):</label>
+        <select name="exercise-target" id="exercise-target" form="exercise-form">
+          <option value="chest">Chest</option>
+          <option value="back">Back</option>
+          <option value="biceps">Biceps</option>
+          <option value="triceps">Triceps</option>
+          <option value="shoulders">Shoulders</option>
+          <option value="legs">Legs</option>
+          <option value="abs">Abs</option>
+        </select><br><br>
+
+        <label for="exercise-equipment">🏋️ Equipment:</label>
+        <select name="exercise-equipment" id="exercise-equipment" form="exercise-form">
+          <option value="bodyweight">Bodyweight</option>
+          <option value="dumbbell">Dumbbell</option>
+          <option value="barbell">Barbell</option>
+          <option value="kettlebell">Kettlebell</option>
+          <option value="cable-machine">Cable Machine</option>
+          <option value="smith-machine">Smith Machine</option>
+          <option value="treadmill">Treadmill</option>
+        </select><br><br>
+
+        <label for="exercise-weight">⚖️ Weight:</label>
+        <input type="number" name="exercise-weight" id="exercise-weight">
+        <select name="exercise-unit" id="exercise-unit" form="exercise-form">
+          <option value="lbs">lbs</option>
+          <option value="kgs">kgs</option>
+        </select><br><br>
+
+        <input type="number" name="exercise-reps" id="exercise-reps">
+        <label for="exercise-sets">Sets</label>
+        <input type="number" name="exercise-reps" id="exercise-reps">
+        <label for="exercise-reps">Reps</label><br><br>
+
+        <input type="submit" value="Create Exercise">
       </form>
     </div>
 
