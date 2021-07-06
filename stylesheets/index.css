@@ -1,3 +1,12 @@
-.hidden {
-  display: none
+body {
+  background-color: #121212;
+  font-family: 'Rubik', sans-serif;
+  color: white;
+}
+
+header {
+  width: fit-content;
+  padding: 10px 30px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 1em;
 }
