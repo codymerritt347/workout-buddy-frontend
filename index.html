@@ -11,9 +11,42 @@
     <link rel="stylesheet" href="stylesheets/index.css">
   </head>
   <body>
-    <header><h2>Workout Buddy</h2></header>
+    <header>
+      <h2>Workout Buddy</h2>
+    </header>
 
-    <div id="workout-form"></div>
+    <div id="new-workout-container" class="card">
+      <form id="workout-form">
+        <h3>Create a new workout:</h3>
+
+        <label for="workout-day">🗓 Day of the week:</label>
+        <select name="workout-day" id="workout-day" form="workout-form">
+          <option value="monday">Monday</option>
+          <option value="tuesday">Tuesday</option>
+          <option value="wednesday">Wednesday</option>
+          <option value="thursday">Thursday</option>
+          <option value="friday">Friday</option>
+          <option value="saturday">Saturday</option>
+          <option value="sunday">Sunday</option>
+        </select><br><br>
+
+        <label for="workout-length">⏱ Length of workout:</label>
+        <select name="workout-length" id="workout-length" form="workout-form">
+          <option value="30">30 minutes</option>
+          <option value="60">60 minutes</option>
+          <option value="90">90 minutes</option>
+        </select><br><br>
+
+        <label for="workout-where">📍 Workout location:</label>
+        <select name="workout-where" id="workout-where" form="workout-form">
+          <option value="home">Home</option>
+          <option value="gym">Gym</option>
+          <option value="outdoors">Outdoors</option>
+        </select><br><br>
+
+        <input type="submit" value="Create Workout">
+      </form>
+    </div>
 
     <div id="workouts-list"></div>
 

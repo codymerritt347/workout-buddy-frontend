@@ -4,10 +4,12 @@ body {
   color: white;
 }
 
-header {
-  margin: auto;
-  width: fit-content;
-  padding: 1em 3em;
+header,
+div {
   background: rgba(255, 255, 255, 0.1);
   border-radius: 0.5em;
+  margin: 20px auto;
+  width: fit-content;
+  padding: 1em 3em;
+  text-align: center;
 }
