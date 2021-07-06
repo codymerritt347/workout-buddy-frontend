@@ -20,8 +20,6 @@
     </div>
 
     <div id="show-workouts-div">
-      <ul id="workouts-ul">
-      </ul>
     </div>
 
     <div id="workout-form-container">
@@ -53,11 +51,11 @@
           <option value="outdoors">Outdoors</option>
         </select><br><br>
 
-        <input type="submit" value="Create Workout">
+        <input type="submit" id="new-workout-button" value="New Workout">
       </form>
     </div>
 
-    <div id="new-exercise-container">
+    <div id="exercise-form-container">
       <form id="exercise-form">
         <h3>New Exercise:</h3>
 
@@ -98,11 +96,9 @@
         <input type="number" name="exercise-reps" id="exercise-reps">
         <label for="exercise-reps">Reps</label><br><br>
 
-        <input type="submit" value="Create Exercise">
+        <input type="submit" id="new-exercise-button" value="New Exercise">
       </form>
     </div>
-
-    <div id="workouts-list"></div>
 
     <script src="javascripts/workout.js"></script>
     <script src="javascripts/exercise.js"></script>

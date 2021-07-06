@@ -11,21 +11,27 @@ function getWorkouts() {
   fetch("http://localhost:3000/workouts")
   .then(resp => resp.json())
   .then(data => {
-    renderWorkoutsHtml(data);
-    renderWorkoutsForm()
+      renderWorkouts(data);
   })
 }
 
-function renderWorkoutsHtml(data) {
-  let 
+function renderWorkouts(data) {
+  const showWorkoutsDiv = document.getElementById('show-workouts-div');
+  data.forEach(workout => {
+    let newWorkoutDiv = document.createElement('div');
+    let newWorkout = new Workout(workout);
+    newWorkoutDiv.innerHTML = `<h3>${newWorkout.day}</h3>`
+    + `<p>${newWorkout.length}</p>` + `<p>${newWorkout.where}</p>`
+    showWorkoutsDiv.appendChild(newWorkoutDiv)
+  })
 }
 
 function renderWorkoutsForm() {
   
 }
 
-function createWorkout() {
-
+function createWorkout(data) {
+  
 }
 
 function updateWorkout() {
