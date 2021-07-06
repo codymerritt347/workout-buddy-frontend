@@ -5,8 +5,9 @@ body {
 }
 
 header {
+  margin: auto;
   width: fit-content;
-  padding: 10px 30px;
+  padding: 1em 3em;
   background: rgba(255, 255, 255, 0.1);
-  border-radius: 1em;
+  border-radius: 0.5em;
 }
